@@ -16,38 +16,37 @@
         <div id="step1">
             <h2>Step 1: Basic Information</h2>
             <form id="formStep1">
-                <label for="firstName">First Name:</label>
+                <label for="firstName"> Name:</label>
                 <input type="text" id="firstName" name="firstName" required><br><br>
-                <label for="lastName">Last Name:</label>
+                <label for="lastName">sobrename:</label>
                 <input type="text" id="lastName" name="lastName" required><br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
-                <button type="button" onclick="nextStep(2)">Next</button>
+                <button type="button" onclick="nextStep(2)">Proximo</button>
             </form>
         </div>
        
 
-
-        
         <div id="step2" style="display:none;">
-            <h2>Step 2: Address Information</h2>
+            <h2>Endereço</h2>
             <form id="formStep2">
                 <label for="address">Address:</label>
-                <input type="text" id="address" name="address" required><br><br>
+                <input type="text" id="address" name="address" required><br>
                 <label for="city">City:</label>
-                <input type="text" id="city" name="city" required><br><br>
+                <input type="text" id="city" name="city" required><br>
                 <label for="state">State:</label>
-                <input type="text" id="state" name="state" required><br><br>
+                <input type="text" id="state" name="state" required><br>
                 <button type="button" onclick="nextStep(3)">Next</button>
             </form>
         </div>
 
+
         <div id="step3" style="display:none;">
-            <h2>Step 3: Account Information</h2>
+            <h2>Step 3: Dados de Acesso</h2>
             <form id="formStep3">
-                <label for="username">Username:</label>
+                <label for="username">Usuario:</label>
                 <input type="text" id="username" name="username" required><br><br>
-                <label for="password">Password:</label>
+                <label for="password">Senha:</label>
                 <input type="password" id="password" name="password" required><br><br>
                 <button type="submit">Submit</button>
             </form>
