@@ -21,6 +21,15 @@
             align-items: center;
             background-color: #f0f0f0;
         }
+
+        .login-box {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            
+        }
            
 
         .form {
@@ -61,25 +70,26 @@
 
     <body>
 
-        <container>
+        <section>
 
             <div class="conteiner">
-
-                <form action="cadastro.php" method="post">
-
-                    <label for="name">Email:</label> <br>
-                    <input type="email" nome="Email" id="email"> <br> <br>
-                    <lebel for="senha"> Senha </lebel> <br>
-                    <input type="password" nome="senha" id="senha"> <br> <br>
-                    <button type="submit">Login</button> <br> <br>
-                    <p>Não possui registro? <a href="cadastro.html">Cadastrar</a></p>
+                <div class="container"></div></div>
+                    <form action="cadastro.php" method="post">
+                        <div class="login-box">
+                             <label for="name">Email:</label> <br>
+                             <input type="email" nome="Email" id="email"> <br> <br>
+                             <lebel for="senha"> Senha </lebel> <br>
+                             <input type="password" nome="senha" id="senha"> <br> <br>
+                             <button type="submit">Login</button> <br> <br>
+                             <p>Não possui registro? <a href="cadastro.html">Cadastra-se</a></p>
+                        </div>
 
 
                 </form>
 
             </div>
 
-        </container>
+        </section>
 
     
     </body>
