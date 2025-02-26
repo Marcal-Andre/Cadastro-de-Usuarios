@@ -15,6 +15,7 @@
         }
 
         .container {
+            width: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -27,8 +28,15 @@
             padding: 20px;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        }
+
+        h1{
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
         }
            
 
@@ -39,9 +47,10 @@
 
         .input {
             margin-bottom: 15px;
+            margin-top: 10p;
             padding: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;            
+            border-radius: 5px;  
         }
 
         .button {
@@ -51,6 +60,15 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            margin-top: 10px;
+            width: 80px;
+            margin-left: 120px;
+        }
+
+        p {
+            margin: 0;
+            margin-top: 02rem;
+            text-align: center;
         }
 
         .button:hover {
@@ -76,12 +94,19 @@
                 <div class="container"></div></div>
                     <form action="cadastro.php" method="post">
                         <div class="login-box">
-                             <label for="name">Email:</label> <br>
-                             <input type="email" nome="Email" id="email"> <br> <br>
-                             <lebel for="senha"> Senha </lebel> <br>
-                             <input type="password" nome="senha" id="senha"> <br> <br>
-                             <button type="submit">Login</button> <br> <br>
-                             <p>Não possui registro? <a href="cadastro.html">Cadastra-se</a></p>
+                            <h1>Login</h1>
+
+                            <div class="form">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" class="input">
+                                
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="senha" id="senha" class="input">
+                                
+                                <button type="submit" class="button">Login</button>
+                                
+                                <p>Não possui registro? <a href="cadastro.html">Cadastra-se</a></p>
+                            </div>
                         </div>
 
 
